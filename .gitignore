@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.DS_Store
+# dataset (~5 GB) - download from the original source, see README
+data/food-101/
+data/*.tar.gz
+# large artifacts; keep small logs/configs/metrics
+runs/*/*.pt
+runs/*/*.keras
+results/*.onnx

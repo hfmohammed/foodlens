@@ -1,0 +1,10 @@
+hamburger
+hot_dog
+pizza
+tacos
+breakfast_burrito
+ramen
+pho
+sushi
+dumplings
+gyoza

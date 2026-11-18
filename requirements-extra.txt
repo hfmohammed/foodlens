@@ -1,0 +1,5 @@
+# Keras comparison (use a separate venv if torch/tensorflow conflict on your machine)
+tensorflow>=2.16
+# Optional ONNX milestone
+onnx
+onnxruntime
