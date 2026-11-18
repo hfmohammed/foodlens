@@ -1,0 +1,11 @@
+path,true,pred,score
+images/pho/2492476.jpg,pho,ramen,0.9896987
+images/hamburger/642418.jpg,hamburger,hot_dog,0.97541046
+images/gyoza/2302720.jpg,gyoza,hot_dog,0.9679033
+images/hot_dog/2913086.jpg,hot_dog,hamburger,0.9579699
+images/dumplings/3905871.jpg,dumplings,gyoza,0.952847
+images/dumplings/1480996.jpg,dumplings,gyoza,0.9457536
+images/sushi/110811.jpg,sushi,hot_dog,0.9430041
+images/hamburger/1455172.jpg,hamburger,tacos,0.936622
+images/breakfast_burrito/2477108.jpg,breakfast_burrito,hot_dog,0.9289374
+images/dumplings/429692.jpg,dumplings,gyoza,0.92604977

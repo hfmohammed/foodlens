@@ -1,0 +1,11 @@
+path,true,pred,score
+images/hot_dog/1143830.jpg,hot_dog,pizza,0.9909775
+images/dumplings/2778632.jpg,dumplings,pho,0.9515195
+images/gyoza/2795850.jpg,gyoza,pizza,0.9017452
+images/dumplings/2356432.jpg,dumplings,pho,0.8418256
+images/ramen/3238759.jpg,ramen,pho,0.82323253
+images/tacos/2220765.jpg,tacos,pho,0.81928146
+images/tacos/2377562.jpg,tacos,pho,0.7903829
+images/hot_dog/2503827.jpg,hot_dog,sushi,0.7877415
+images/dumplings/2325370.jpg,dumplings,pho,0.7830054
+images/tacos/1476158.jpg,tacos,pho,0.7643122

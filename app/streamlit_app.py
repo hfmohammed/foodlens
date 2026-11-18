@@ -25,7 +25,7 @@ def get_model(path):
     return load_torch(path)
 
 
-ckpt = st.sidebar.text_input("Checkpoint", os.environ.get("FOODLENS_CKPT", "runs/pt_mnv3/best.pt"))
+ckpt = st.sidebar.text_input("Checkpoint", os.environ.get("FOODLENS_CKPT", "runs/pt_mnv3_ft/best.pt"))
 if not Path(ckpt).exists():
     st.error(f"Checkpoint not found: {ckpt}. Train a model first (see README).")
     st.stop()
@@ -34,7 +34,9 @@ model, preset = get_model(ckpt)
 file = st.file_uploader("JPG or PNG", type=["jpg", "jpeg", "png"])
 if file:
     img = Image.open(file)
-    st.image(img, caption="Your photo", use_container_width=True)
+    left, right = st.columns(2)
+    left.image(img, caption="Your photo", use_container_width=True)
+    right.subheader("Top 3 predictions")
     for rank, (name, score) in enumerate(predict_pil(model, preset, img), 1):
-        st.write(f"**{rank}. {name.replace('_', ' ')}** — {score:.1%}")
-        st.progress(min(score, 1.0))
+        right.write(f"**{rank}. {name.replace('_', ' ')}** — {score:.1%}")
+        right.progress(min(score, 1.0))

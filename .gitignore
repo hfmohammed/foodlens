@@ -10,3 +10,5 @@ data/*.tar.gz
 runs/*/*.pt
 runs/*/*.keras
 results/*.onnx
+!runs/pt_mnv3_ft/best.pt
+results/*.onnx.data

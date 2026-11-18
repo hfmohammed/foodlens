@@ -1,0 +1,12 @@
+device: mps
+ep  1 train 0.4779 val 0.5115 macroF1 0.8349
+ep  2 train 0.4512 val 0.5061 macroF1 0.8320
+ep  3 train 0.4380 val 0.5011 macroF1 0.8336
+ep  4 train 0.4187 val 0.4976 macroF1 0.8358
+ep  5 train 0.4187 val 0.4941 macroF1 0.8404
+ep  6 train 0.4062 val 0.4888 macroF1 0.8395
+ep  7 train 0.3992 val 0.4861 macroF1 0.8373
+ep  8 train 0.3860 val 0.4842 macroF1 0.8413
+ep  9 train 0.3858 val 0.4815 macroF1 0.8421
+ep 10 train 0.3775 val 0.4789 macroF1 0.8409
+best val macro-F1 0.8421 -> runs/pt_mnv3_ft/best.pt

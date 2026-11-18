@@ -5,10 +5,11 @@ import torch
 from .classes import CLASSES
 from .data import preprocess_pil
 from .models import build_model
+from .utils import load_checkpoint
 
 
 def load_torch(ckpt_path: str, device: str = "cpu"):
-    ck = torch.load(ckpt_path, map_location="cpu")
+    ck = load_checkpoint(ckpt_path)
     model = build_model(ck["arch"], pretrained=False)
     model.load_state_dict(ck["state_dict"])
     return model.to(device).eval(), ck["preset"]

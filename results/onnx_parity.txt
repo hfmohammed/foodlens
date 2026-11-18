@@ -1,0 +1,8 @@
+[torch.onnx] Run decompositions... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+[torch.onnx] Optimize the ONNX graph...
+[torch.onnx] Optimize the ONNX graph... ✅
+max |logit diff| = 2.57e-05 (atol 0.0001); top-1 agreement = 100%
+PyTorch CPU  p50/p95 ms: 74.80 / 92.43
+ONNX RT CPU  p50/p95 ms: 5.27 / 10.60

@@ -1,0 +1,17 @@
+devices: ['/physical_device:CPU:0']
+ep  1 train 2.2576 val 2.1927 macroF1 0.1422
+ep  2 train 2.1681 val 2.1063 macroF1 0.2198
+ep  3 train 2.1104 val 2.0991 macroF1 0.2132
+ep  4 train 2.0733 val 2.0517 macroF1 0.2189
+ep  5 train 2.0322 val 1.9920 macroF1 0.2759
+ep  6 train 1.9809 val 1.8994 macroF1 0.3157
+ep  7 train 1.9375 val 1.8924 macroF1 0.3089
+ep  8 train 1.8898 val 1.8496 macroF1 0.3165
+ep  9 train 1.8611 val 1.8999 macroF1 0.3186
+ep 10 train 1.8162 val 1.7624 macroF1 0.3669
+ep 11 train 1.7876 val 1.7286 macroF1 0.3701
+ep 12 train 1.7563 val 1.7626 macroF1 0.3740
+ep 13 train 1.7295 val 1.6725 macroF1 0.4116
+ep 14 train 1.7259 val 1.7053 macroF1 0.3803
+ep 15 train 1.6977 val 1.6579 macroF1 0.3999
+best val macro-F1 0.4116 -> runs/keras_cnn/best.keras

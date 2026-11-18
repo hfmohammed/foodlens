@@ -18,7 +18,7 @@ from torch.utils.data import DataLoader, Subset
 from .data import ManifestDataset
 from .metrics import compute_metrics
 from .models import build_model, set_train_mode
-from .utils import env_info, pick_device, save_json, seed_everything
+from .utils import env_info, load_checkpoint, pick_device, save_json, seed_everything
 
 
 def predict_logits(model, loader, device):
@@ -62,7 +62,7 @@ def main():
     g = torch.Generator().manual_seed(a.seed)
     model = build_model(a.arch, unfreeze_last=a.unfreeze_last).to(device)
     if a.init_from:
-        model.load_state_dict(torch.load(a.init_from, map_location="cpu")["state_dict"])
+        model.load_state_dict(load_checkpoint(a.init_from)["state_dict"])
     params = [q for q in model.parameters() if q.requires_grad]
     opt = torch.optim.AdamW(params, lr=a.lr, weight_decay=a.weight_decay)
     loss_fn = nn.CrossEntropyLoss()  # takes raw logits
