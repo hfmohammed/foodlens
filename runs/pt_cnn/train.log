@@ -1,0 +1,17 @@
+device: mps
+ep  1 train 2.2736 val 2.2091 macroF1 0.1404
+ep  2 train 2.1760 val 2.1203 macroF1 0.2022
+ep  3 train 2.1144 val 2.0887 macroF1 0.1994
+ep  4 train 2.0680 val 2.0383 macroF1 0.2382
+ep  5 train 2.0544 val 2.0168 macroF1 0.2449
+ep  6 train 2.0067 val 1.9747 macroF1 0.2743
+ep  7 train 1.9965 val 1.9422 macroF1 0.2699
+ep  8 train 1.9422 val 1.9180 macroF1 0.2581
+ep  9 train 1.9143 val 1.8753 macroF1 0.2694
+ep 10 train 1.8814 val 1.8349 macroF1 0.3351
+ep 11 train 1.8697 val 1.8170 macroF1 0.3574
+ep 12 train 1.8403 val 1.7874 macroF1 0.3703
+ep 13 train 1.8111 val 1.7664 macroF1 0.3765
+ep 14 train 1.7870 val 1.8111 macroF1 0.3315
+ep 15 train 1.7644 val 1.7772 macroF1 0.3561
+best val macro-F1 0.3765 -> runs/pt_cnn/best.pt

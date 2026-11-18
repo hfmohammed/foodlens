@@ -1,0 +1,26 @@
+{
+  "arch": "cnn",
+  "manifest": "data/manifest.csv",
+  "data_root": "data/food-101",
+  "name": "pt_cnn",
+  "epochs": 15,
+  "batch_size": 32,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "seed": 42,
+  "device": "auto",
+  "workers": 4,
+  "no_flip": false,
+  "unfreeze_last": false,
+  "init_from": null,
+  "overfit_batch": false,
+  "device_used": "mps",
+  "env": {
+    "python": "3.12.11",
+    "platform": "macOS-26.4.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "torch": "2.15.0"
+  },
+  "best_val_macro_f1": 0.37651599201982644,
+  "total_seconds": 865.8
+}
